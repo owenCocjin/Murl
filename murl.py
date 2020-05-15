@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 ## Author:	Owen Cocjin
 ## Version:	0.1
-## Date:	10/05/20
+## Date:	15/05/20
 ## Description:
 ##	Redirect a user's link to any page as if the page was being hosted on your machine
 ## Note:
