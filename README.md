@@ -12,6 +12,8 @@
 - Server crashes if request attempt without target URL
 - (Apparently) Random missing icons
 - Pages fail to load when requested relatively (`http://localhost/bad_page.js` vs `http://target_page.com/bad_page.js`)
+#### -=Non-fatal bugs=-
+- Connections hang when importing other files (such as css). Desired pages still load, but won't close connection. Requires timeout to close connection
 
 ## Dependencies
 - [Sockets](https://docs.python.org/3/howto/sockets.html)
