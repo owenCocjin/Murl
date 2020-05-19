@@ -28,7 +28,7 @@ class RequestHandler(BaseHTTPRequestHandler):
 		'''Send required/common headers'''
 		if filename:
 			_response=200
-			_content_length=os.path.getsize(filename)-1
+			_content_length=os.path.getsize(filename)
 		else:
 			_response=204
 			_content_length=0
@@ -46,7 +46,6 @@ class RequestHandler(BaseHTTPRequestHandler):
 			self.end_headers()
 
 	def do_GET(self):
-		#Print info
 		print(f"Headers: {self.headers}")
 		local_path=makeLocalPath(self.path, root="Home")
 
